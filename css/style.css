@@ -137,6 +137,7 @@ p {
 .mail-tel:hover,
 .mail-tel:focus {
   color: var(--akcent-color);
+  fill: var(--akcent-color);
 
 }
 .link-nav .link-current {
@@ -202,7 +203,7 @@ p {
 
 
   
-}
+
 
 .svg:hover{
   fill:
@@ -269,6 +270,10 @@ fill: var(--main-color);
 
   
 }
+
+.icon-a:hover svg{
+  fill: #EEEEEE;
+}
 .icon-a{
   padding-right: 10px;
 
@@ -299,6 +304,12 @@ fill: var(--main-color);
  padding: 10px;
 
 }
+
+.icon-li:focus svg{
+  fill: #FFFFFF;
+  background-color: var(--akcent-color);
+}
+
 
 
 
@@ -334,31 +345,37 @@ fill: var(--main-color);
   border-radius: 5px;
 }
 
-.client:hover{
+.client:hover
+{
   fill: var(--akcent-color);
   border-color:var(--akcent-color);
 }
 
+.client:focus svg{
+  fill: var(--akcent-color);
+  border-color:var(--akcent-color);
+}
 .mail-tel.icon-nav {
 margin: 0;
 padding: 0;
+
 }
 
 
 
 .li-section2:nth-child(1)::before{
 
-background-image: url(/images/antenna.png);}
+background-image: url(../images/antenna.png);}
 
 .li-section2:nth-child(2)::before{
-  background-image: url(/images/clock.png);}
+  background-image: url(../images/clock.png);}
 
   .li-section2:nth-child(3)::before{
-    background-image: url(/images/diagram.png);}
+    background-image: url(../images/diagram.png);}
   
 
   .li-section2:nth-child(4)::before{
-  background-image: url(/images/astronaut.png);}
+  background-image: url(../images/astronaut.png);}
 
 
 
@@ -478,6 +495,18 @@ footer {
  
   background: #2f303a;
 
+}
+
+
+.svg-icon-fooret{
+  width: 20px;
+  height: 20px;
+  fill: var(--background-color-buttom);
+ padding: 10px;
+}
+.a-footer:focus 
+{
+  background-color: var(--akcent-color);
 }
 .p-footer{
   color: var(--background-color-buttom);
